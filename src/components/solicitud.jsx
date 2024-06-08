@@ -32,7 +32,7 @@ const Solicitudes = () => {
     };
     try {
       const response = await axios.post(
-        "http://localhost:5000/insertSolicitud",
+        "https://nodeapi-latest.onrender.com/insertSolicitud",
         {
           params,
         }
@@ -50,7 +50,9 @@ const Solicitudes = () => {
 
   const getInsumos = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/insumos");
+      const response = await axios.get(
+        "https://nodeapi-latest.onrender.com/insumos"
+      );
       setAllInsumos(response.data);
     } catch (err) {
       console.log(err);
@@ -69,7 +71,9 @@ const Solicitudes = () => {
 
   const getHospital = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/customhospital");
+      const response = await axios.get(
+        "https://nodeapi-latest.onrender.com/customhospital"
+      );
       setHospital(response.data);
     } catch (err) {
       console.log(err);

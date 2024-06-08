@@ -19,7 +19,7 @@ const Hospitales = () => {
     };
     try {
       const response = await axios.post(
-        "http://localhost:5000/insertHospital",
+        "https://nodeapi-latest.onrender.com/insertHospital",
         {
           params,
         }
@@ -32,7 +32,9 @@ const Hospitales = () => {
 
   const getHospitales = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/hospitales");
+      const response = await axios.get(
+        "https://nodeapi-latest.onrender.com/hospitales"
+      );
       setAllHospitales(response.data);
     } catch (err) {
       console.log(err);
@@ -50,9 +52,7 @@ const Hospitales = () => {
         <Header />
         <div className="content bg-blue-50 flex">
           <div className="info w-full p-7">
-            <h1 className="font-bold text-2xl">
-              Hospitales
-            </h1>
+            <h1 className="font-bold text-2xl">Hospitales</h1>
             <div className="CardInfo w-12/12 bg-white mt-8 rounded-xl">
               <div className="Cardheadr bg-blue-500 text-white rounded-t-xl">
                 <h1 className="p-4">Consulta y creacion de Hospitales</h1>

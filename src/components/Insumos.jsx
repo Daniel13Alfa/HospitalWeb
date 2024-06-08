@@ -16,9 +16,12 @@ const Insumos = () => {
       nombre_insumo: insumo,
     };
     try {
-      const response = await axios.post("http://localhost:5000/insertInsumo", {
-        params,
-      });
+      const response = await axios.post(
+        "https://nodeapi-latest.onrender.com/insertInsumo",
+        {
+          params,
+        }
+      );
       getInsumos();
     } catch (err) {
       console.log(err);
@@ -27,7 +30,9 @@ const Insumos = () => {
 
   const getInsumos = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/insumos");
+      const response = await axios.get(
+        "https://nodeapi-latest.onrender.com/insumos"
+      );
       setAllInsumos(response.data);
     } catch (err) {
       console.log(err);
