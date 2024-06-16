@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <div>
       <nav className="bg-white border-gray-200 dark:bg-gray-900 pb-5">
-        <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-9 pt-4">
+        <div className="flex flex-wrap items-center justify-between mx-9 pt-4">
           <Link className="flex items-center" to={"/"}>
             <img src={viteLogo} className="logo" alt="Vite logo" />
           </Link>
