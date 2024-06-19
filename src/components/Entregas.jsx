@@ -30,10 +30,10 @@ const Entregas = () => {
         <Header />
         <div className="content bg-blue-50 flex">
           <div className="info w-full p-7">
-            <h1 className="font-bold text-2xl">Entregas</h1>
+            <h1 className="font-bold text-2xl uppercase">Deliveries</h1>
             <div className="CardInfo w-12/12 bg-white mt-8 rounded-xl">
               <div className="Cardheadr bg-blue-500 text-white rounded-t-xl">
-                <h1 className="p-4">Detalle de cada entrega</h1>
+                <h1 className="p-4">Deliveries details</h1>
               </div>
               <div className="CardConten p-6">
                 <div className="tienda mb-6 flex justify-between items-center"></div>
