@@ -9,7 +9,7 @@ function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <div className="dark:bg-gray-900">
+    <div className="bg-white">
       <Header />
       <Content />
       <Footer />
