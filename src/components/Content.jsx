@@ -16,7 +16,7 @@ const Content = () => {
             <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
             <div className="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
               <p className="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                Develop Frontend software solutions
+                Hospitals
               </p>
             </div>
           </div>
@@ -31,7 +31,7 @@ const Content = () => {
             <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
             <div className="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
               <p className="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                Develop Backend software solutions
+                Supplies
               </p>
             </div>
           </div>
@@ -46,19 +46,18 @@ const Content = () => {
             <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
             <div className="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
               <p className="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                Basic database sknowledge
+                Request
               </p>
             </div>
           </div>
         </div>
         <div>
           <h1 className="text-5xl font-bold text-black">
-            Hi I Am A Software Engineer
+            HOSPITALS ADMINITRATION
           </h1>
           <p className="py-6 text-justify text-black">
-            Welcome to my web page, my name is Daniel Alfaro Alfaro. I am
-            software developer, here you can reed someting about my experience,
-            skills, etc.
+            Welcome to hospitals administration, this is a portal web to
+            administrate hospital supplies.
           </p>
         </div>
       </div>
