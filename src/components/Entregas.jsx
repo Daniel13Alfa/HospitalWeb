@@ -28,7 +28,7 @@ const Entregas = () => {
     <div className="dark:bg-gray-900">
       <div className="w-full">
         <Header />
-        <div className="content bg-blue-50 flex">
+        <div className="content bg-blue-50 flex text-gray-600">
           <div className="info w-full p-7">
             <h1 className="font-bold text-2xl uppercase">Deliveries</h1>
             <div className="CardInfo w-12/12 bg-white mt-8 rounded-xl">
