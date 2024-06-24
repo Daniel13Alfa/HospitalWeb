@@ -52,32 +52,33 @@ const Hospitales = () => {
         <Header />
         <div className="content bg-blue-50 flex">
           <div className="info w-full p-7">
-            <h1 className="font-bold text-2xl">Hospitales</h1>
+            <h1 className="font-bold text-2xl">Hospitals</h1>
             <div className="CardInfo w-12/12 bg-white mt-8 rounded-xl">
               <div className="Cardheadr bg-blue-500 text-white rounded-t-xl">
-                <h1 className="p-4">Consulta y creacion de Hospitales</h1>
+                <h1 className="p-4">Create and search Hospitals</h1>
               </div>
               <div className="CardConten p-6">
-                <div className="tienda mb-6 flex justify-between items-center">
-                  <Button variant="contained" onClick={insertHospital}>
-                    CREAR
-                  </Button>
-
-                  <div className="buttons w-10/12 ">
-                    <TextField
-                      required
-                      id="outlined-required"
-                      label="Nombre Hospital"
-                      onChange={(ev) => setHospital(ev.target.value)}
-                    />
-                    <TextField
-                      required
-                      id="outlined-required"
-                      label="Numero de Casos"
-                      onChange={(ev) => setCasos(ev.target.value)}
-                    />
-                  </div>
+                <div className="dates mb-6 flex justify-between items-center">
+                  <h1 className="w-1/12 text-sm text-black">Hospital Name</h1>
+                  <TextField
+                    required
+                    id="outlined-required"
+                    className="w-3/12"
+                    onChange={(ev) => setHospital(ev.target.value)}
+                  />
+                  <h1 className="w-1/12 text-sm text-black">Cases Number</h1>
+                  <TextField
+                    required
+                    id="outlined-required"
+                    type="number"
+                    className="w-3/12"
+                    onChange={(ev) => setCasos(ev.target.value)}
+                  />
                 </div>
+                <Button variant="contained" onClick={insertHospital}>
+                  CREATE
+                </Button>
+                <br></br>
                 <br></br>
                 {Object.keys(allHospitales).length !== 0 ? (
                   <TableHospitales tablebody={allHospitales} />

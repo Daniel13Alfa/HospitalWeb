@@ -4,16 +4,16 @@ import { DataGrid, GridToolbar } from "@mui/x-data-grid";
 
 export const TableHospitales = ({ tablehead, tablebody }) => {
   const columns = [
-    { field: "id", headerName: "No", width: 90 },
+    { field: "id", headerName: "No.", width: 90 },
     {
       field: "nombre_hospital",
-      headerName: "Nombre Hospital",
+      headerName: "Hospital Name",
       width: 150,
       editable: true,
     },
     {
       field: "num_casos",
-      headerName: "Numero de casos",
+      headerName: "Case Number",
       width: 150,
       editable: true,
     },
