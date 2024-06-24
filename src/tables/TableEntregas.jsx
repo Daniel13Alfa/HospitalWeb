@@ -4,35 +4,35 @@ import { DataGrid, GridToolbar } from "@mui/x-data-grid";
 
 export const TableEntregas = ({ tablehead, tablebody }) => {
   const columns = [
-    { field: "id", headerName: "No", width: 90 },
-    { field: "id_solicitud", headerName: "No. Solicitud", width: 150 },
+    { field: "id", headerName: "No.", width: 90 },
+    { field: "id_solicitud", headerName: "No. Request", width: 150 },
     {
       field: "fecha_solicitud",
-      headerName: "Fecha Solicitud",
+      headerName: "Request Date",
       width: 150,
       editable: true,
     },
     {
       field: "fecha_entrega",
-      headerName: "Fecha de Entrega",
+      headerName: "Request delivery",
       width: 150,
       editable: true,
     },
     {
       field: "nombre_hospital",
-      headerName: "Nombre del hospital",
+      headerName: "hospital Name",
       width: 150,
       editable: true,
     },
     {
       field: "nombre_insumo",
-      headerName: "Nombre del insumo",
+      headerName: "Supplie Name",
       width: 150,
       editable: true,
     },
     {
       field: "cantidad_solicitada",
-      headerName: "Cantidad Solicitada",
+      headerName: "Request Quantity",
       width: 150,
       editable: true,
     },
